@@ -34,6 +34,8 @@
             this.UserNamelabel = new Smm.Windows.Forms.Label();
             this.Passwordlabel = new Smm.Windows.Forms.Label();
             this.pictureBox1 = new Smm.Windows.Forms.PictureBox();
+            this.label1 = new Smm.Windows.Forms.Label();
+            this.label2 = new Smm.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             this.Okbutton.Location = new System.Drawing.Point(289, 114);
             this.Okbutton.Name = "Okbutton";
             this.Okbutton.Size = new System.Drawing.Size(93, 26);
-            this.Okbutton.TabIndex = 0;
+            this.Okbutton.TabIndex = 2;
             this.Okbutton.Text = "ورود";
             this.Okbutton.UseVisualStyleBackColor = true;
             this.Okbutton.Click += new System.EventHandler(this.Okbutton_Click);
@@ -56,8 +58,7 @@
             this.UserNametextBox.Location = new System.Drawing.Point(205, 30);
             this.UserNametextBox.Name = "UserNametextBox";
             this.UserNametextBox.Size = new System.Drawing.Size(147, 21);
-            this.UserNametextBox.TabIndex = 2;
-            this.UserNametextBox.Text = "123";
+            this.UserNametextBox.TabIndex = 0;
             this.UserNametextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PasswordtextBox
@@ -67,8 +68,7 @@
             this.PasswordtextBox.Location = new System.Drawing.Point(205, 65);
             this.PasswordtextBox.Name = "PasswordtextBox";
             this.PasswordtextBox.Size = new System.Drawing.Size(147, 21);
-            this.PasswordtextBox.TabIndex = 3;
-            this.PasswordtextBox.Text = "123";
+            this.PasswordtextBox.TabIndex = 1;
             this.PasswordtextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.PasswordtextBox.UseSystemPasswordChar = true;
             // 
@@ -99,12 +99,33 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(164, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "mahdi";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(174, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "123";
+            // 
             // LoginForm
             // 
+            this.AcceptButton = this.Okbutton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(449, 146);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Passwordlabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.UserNamelabel);
             this.Controls.Add(this.PasswordtextBox);
             this.Controls.Add(this.UserNametextBox);
@@ -116,6 +137,8 @@
             this.Controls.SetChildIndex(this.UserNametextBox, 0);
             this.Controls.SetChildIndex(this.PasswordtextBox, 0);
             this.Controls.SetChildIndex(this.UserNamelabel, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.Passwordlabel, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -132,5 +155,7 @@
         private Smm.Windows.Forms.Label UserNamelabel;
         private Smm.Windows.Forms.Label Passwordlabel;
         private Smm.Windows.Forms.PictureBox pictureBox1;
+        private Smm.Windows.Forms.Label label1;
+        private Smm.Windows.Forms.Label label2;
     }
 }
